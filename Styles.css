@@ -1,0 +1,451 @@
+body, html{
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #f5c7c7;
+    color: #231313;
+    height: 100vh;
+    margin: 0;
+}
+
+html, div{
+    display: block;
+}
+
+body{
+    display: block;
+    margin: 8px;
+    transition: margin-top 0.5s ease 0s;
+}
+
+.loginContainer{
+    background-color: #f5c7c7;
+    min-height: 100vh;
+}
+
+#loginLogo{
+    font-family: DM Mono, "sans-serif";
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.loginWrapper{
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.loginWrapper_1{
+    background-color: #fff;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.loginCredentialsWrapper, .loginWrapper_1 {
+    width: 70%;
+    max-width: 780px;
+    padding: 15px 30px 30px;
+    margin: 0 auto;
+    border: 1px solid #f5c7c7;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.loginWrapper_1{
+    overflow: hidden;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#userName, #password{
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ededed;
+    outline: none;
+    padding: 10px 0;
+}
+
+input {
+    appearance: none;
+    border-radius: 0;
+    color: #484c55;
+}
+
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+}
+
+input[type="password" i] {
+    -webkit-text-security: disc !important;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+.errorMessageContainer{
+    background-color: #fff;
+    height: 45px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+#loginButton{
+    background-color: #dc3d3d;
+    border: 4px solid #dc3d3d;
+    border-radius: 4px;
+    color: #231313;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    line-height: normal;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    text-decoration: none;
+    width: 100%;
+}
+
+input[type="submit" i] {
+    user-select: none;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: pre;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+
+.loginWrapper_2{
+    color: #fff;
+    font-family: DM Mono, "sans-serif";
+}
+
+.loginCredentialsWrapper {
+    background-color: #231313;
+    overflow: hidden;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.loginCredentials {
+    clear: both;
+    line-height: 24px;
+}
+
+.btn, h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h4{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.pageWrapper{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.headerContainer{
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    flex-direction: column;
+}
+
+.primaryHeader{
+    border-bottom: 1px solid #ededed;
+    height: 56px;
+}
+
+.primaryHeader .headerLabel {
+    background: #fff;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+
+.primaryHeader .appLogo {
+    font-family: DM Mono, "sans-serif";
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.secondaryHeader{
+    background: #fff;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.secondaryHeader .title {
+    color: #231313;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.logoutButtonContainer {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    width: auto;
+    height: auto;
+}
+
+#logoutButton {
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    appearance: auto;
+}
+
+.inventoryContainer{
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 40px;
+    margin: 0 auto 30px;
+}
+
+.inventoryList {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 0 15px 30px;
+}
+
+.inventoryItem {
+    height: 240px;
+    width: 100%;
+    border: 1px solid #ededed;
+    background: #fff;
+    position: relative;
+    margin-bottom: 12px;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+a {
+    color: rgb(0, 75, 145);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.inventoryItemImage img {
+    height: 100%;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border: 1px solid #ededed;
+}
+
+.inventoryItemImage{
+    flex: 1 1;
+    overflow: hidden;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.inventoryItemDescription {
+    flex: 2 1;
+    flex-direction: column;
+    padding: 20px 34px 20px 20px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventoryItemLabel>a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.inventoryItemName {
+    font-family: "DM Mono", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #581818;
+}
+
+.inventoryItem .inventoryItemDesc {
+    width: inherit; 
+}
+
+.inventoryItemDesc {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #231313;
+}
+
+.inventoryItemDesc {
+    width: 75%;
+}
+
+.priceBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.inventoryItemPrice {
+    border-top: 1px solid #ededed;
+    color: #231313;
+    font-family: "DM Mono", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.leftComponent .backToProducts {
+    background-color: #fff;
+    color: #18583a;
+    border: none;
+}
+
+.backToProducts{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 38px;
+    position: relative;
+    color: #231313;
+    border: 1px solid #231313;
+}
+
+.inventoryItemContainer {
+    background-color: #fff;
+    padding: 40px 15px;
+}
+
+.inventoryDetailsContainer {
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    display: flex;
+    max-width: 1060px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.inventoryDetailsContainer .inventoryDetailsImageContainer {
+    flex: 1 1;
+    display: block;
+}
+
+.inventoryDetailsContainer .inventoryDetailsImage {
+    flex: 1 1;
+    height: 100%;
+    width: 100%;
+}
+
+.inventoryDetailsContainer .inventoryDetailsDescriptionContainer {
+    flex: 2 1;
+    padding: 20px 20px 0;
+}
+
+.inventoryDetailsContainer .largeSize {
+    width: 100%;
+}
+
+.inventoryDetailsContainer .inventoryDetailsName {
+    font-family: "DM Mono", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #231313;
+    margin-bottom: 15px;
+}
+
+.inventoryDetailsContainer .inventoryDetailsDescription {
+    margin-bottom: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #231313;
+    margin-bottom: 30px;
+}
+
+.inventoryDetailsContainer .inventoryDetailsPrice {
+    color: #231313;
+    font-family: "DM Mono", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#backToProducts{
+    color: inherit;
+    text-decoration: none;
+}

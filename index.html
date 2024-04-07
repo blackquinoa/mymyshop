@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="MyMy Shop.ico">
+        <link rel="stylesheet" href="Styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500">
+        <title>MyMy Shop</title>
+    </head>
+
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <script src="auth.js"></script>
+        <script>
+            requireLogin();
+        </script>
+        <div id="root">
+            <div id="pageWrapper" class="pageWrapper">
+                <div id="contentsWrapper">
+                    <div id="headerContainer" class="headerContainer">
+                        <div class="primaryHeader">
+                            <div class="headerLabel">
+                                <div class="appLogo">MyMy Shop</div>
+                            </div>
+                        </div>
+                        <div class="secondaryHeader">
+                            <span class="title">Products</span>
+                            <div class="logoutButtonContainer">
+                                <button id="logoutButton" style="display: block;">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="inventoryContainer">
+                        <div>
+                            <div id="inventoryContainer" class="inventoryContainer">
+                                <div class="inventoryList">
+                                    <div class="inventoryItem">
+                                        <div class="inventoryItemImage">
+                                            <a href="itemOne.html" id="itemOneImage">
+                                                <img alt="Gojou Wallet" class="inventoryItemImage" src="Gojo Wallet.png">
+                                            </a>
+                                        </div>
+                                        <div class="inventoryItemDescription">
+                                            <div class="inventoryItemLabel">
+                                                <a href="itemOne.html" id="itemOneTitleLink">
+                                                    <div class="inventoryItemName">Gojou Wallet</div>
+                                                </a>
+                                                <div class="inventoryItemDesc">Gojou Wallet combines sleek design with robust functionality. Crafted with premium materials, it offers secure storage for cards and cash, blending style and practicality seamlessly.</div>
+                                            </div>
+                                            <div class="priceBar">
+                                                <div class="inventoryItemPrice">
+                                                    ₹
+                                                    400
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inventoryItem">
+                                        <div class="inventoryItemImage">
+                                            <a href="itemTwo.html" id="itemTwoImage">
+                                                <img alt="Kuromi Wallet" class="inventoryItemImage" src="Kuromi Figurine.png">
+                                            </a>
+                                        </div>
+                                        <div class="inventoryItemDescription">
+                                            <div class="inventoryItemLabel">
+                                                <a href="itemTwo.html" id="itemTwoTitleLink">
+                                                    <div class="inventoryItemName">Kuromi Wallet</div>
+                                                </a>
+                                                <div class="inventoryItemDesc">Discover the Kuromi figurine: a high-quality, detailed collectible capturing her iconic pose. Made for fans and collectors, it adds a touch of kawaii charm to any display.</div>
+                                            </div>
+                                            <div class="priceBar">
+                                                <div class="inventoryItemPrice">
+                                                    ₹
+                                                    5,000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inventoryItem">
+                                        <div class="inventoryItemImage">
+                                            <a href="itemThree.html" id="itemThreeImage">
+                                                <img alt="Lelouch Poster" class="inventoryItemImage" src="Lelouch Poster.png">
+                                            </a>
+                                        </div>
+                                        <div class="inventoryItemDescription">
+                                            <div class="inventoryItemLabel">
+                                                <a href="itemThree.html" id="itemThreeTitleLink">
+                                                    <div class="inventoryItemName">Lelouch Poster</div>
+                                                </a>
+                                                <div class="inventoryItemDesc">Showcase the Lelouch poster, highlighting the iconic Code Geass character's commanding presence. Printed on high-quality paper, it's a must-have for anime fans and collectors to elevate any space.</div>
+                                            </div>
+                                            <div class="priceBar">
+                                                <div class="inventoryItemPrice">
+                                                    ₹
+                                                    800
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inventoryItem">
+                                        <div class="inventoryItemImage">
+                                            <a href="itemFour.html" id="itemFourImage">
+                                                <img alt="Genshin Impact Keychain" class="inventoryItemImage" src="Genshin Impact Keychain.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="inventoryItemDescription">
+                                            <div class="inventoryItemLabel">
+                                                <a href="itemFour.html" id="itemFourTitleLink">
+                                                    <div class="inventoryItemName">Genshin Impact Keychain</div>
+                                                </a>
+                                                <div class="inventoryItemDesc">Embrace Genshin Impact with our detailed keychain featuring favorite characters. Made with durable materials, it's the perfect on-the-go accessory for fans.</div>
+                                            </div>
+                                            <div class="priceBar">
+                                                <div class="inventoryItemPrice">
+                                                    ₹
+                                                    2,000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById('logoutButton').addEventListener('click', () => {
+                document.cookie = 'isLoggedIn=; path=/; expires=Mon, 18 May 1970 00:00:00 UTC';
+                window.location.href = 'login.html'
+            })
+        </script>
+    </body>
+</html>

@@ -4,7 +4,7 @@ function isLoggedIn() {
     for(let i = 0; i < cookies.length; i++){
         const cookie = cookies[i].trim();
         if(cookie.startsWith('isLoggedIn=')){
-            return cookie.substring('isLoggedIn='.length) == true;
+            return cookie.substring('isLoggedIn='.length) == 'true';
         }
     }
     return false;

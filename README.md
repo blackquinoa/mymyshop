@@ -11,8 +11,6 @@ MyMy Shop is a simple shopping application built using HTML, CSS, and JavaScript
   - [Product Details](#product-details)
   - [Logout](#logout)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
